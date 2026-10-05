@@ -1,0 +1,19 @@
+/* .photoBlock {
+  position: relative;
+  display: inline-block;   /* shrink-wraps to the image's size */
+  container-type: inline-size;
+}
+ */
+/* .photoBlock img {
+  display: block;          /* removes the small gap under the image */
+  width: 100%;
+  height: auto;  
+} */
+
+/* .photoName {
+  position: absolute;
+  top: 20%;                /* position as a % of the image */
+  left: 10%;
+  margin: 0;
+  font-size: 5cqw;         /* scales with the image's width */
+} */

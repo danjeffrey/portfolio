@@ -1,0 +1,233 @@
+/* styles.css */
+
+/* Fonts: ************* */
+.playfair-display-djportfolio {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+}
+
+.roboto-djportfolio {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-variation-settings: "wdth" 100;
+}
+/* ******************** */
+
+.aboutMeText {
+  font-size: x-small;
+}
+
+body {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 0;
+  margin: 0;
+}
+
+#contactBlurb {
+  margin-top: 0rem; /* extra space above */
+  margin-bottom: 0rem; /* extra space above */
+}
+
+.contactOther {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contactTitle {
+  margin-top: 0rem; /* extra space above */
+  margin-bottom: 0rem; /* extra space above */
+}
+
+footer {
+  background-color: #0891b2;
+  color: white;
+  font-weight: 200;
+  padding: 30px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footerImage {
+  flex: 1 1 300px;
+  max-width: 300px;
+}
+
+.contactBodyText {
+  font-size: 0.75em;
+}
+
+.footerIcon {
+  width: 13px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 1.35rem;
+}
+
+header {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+@media (max-width: 450px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 0px;
+  }
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: hsl(192, 91%, 36%); /* or a gradient or image */
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 100%);
+}
+
+.headerText {
+  background-color: white;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  max-width: 200px;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.15);
+
+  position: absolute;
+  top: 55px;
+  left: 250px; /* <— this pushes it under the image */
+}
+
+@media (max-width: 450px) {
+  .headerText {
+    position: unset;
+  }
+}
+
+.iconMedium {
+  width: 17px;
+}
+
+.iconPlusText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon.small {
+  width: 12px;
+}
+
+main {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.photoBlock {
+  position: relative;
+  display: inline-block;
+  width: fit-content; /* wrapper hugs the image */
+  z-index: 1;
+}
+
+@media (max-width: 450px) {
+  .photoBlock {
+    position: unset;
+  }
+}
+
+.photo {
+  width: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 450px) {
+  .headerText {
+    position: relative;
+    top: -50px;
+    left: 0px; /* <— this pushes it under the image */
+  }
+}
+
+.photoName {
+  position: relative;
+  top: -50px;
+  left: 175px;
+  transform: translateX(-50%);
+
+  margin: 0;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  white-space: nowrap;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7); /* readable on any photo */
+}
+
+.projectCard {
+  background-color: white;
+  max-width: 165px;
+  border: 1px solid black;
+}
+
+.projectDescription {
+  font-size: x-small;
+}
+
+.projectDetail {
+  padding: 15px;
+}
+
+.projectDetailHeader {
+  font-family: "Playfair Display", serif;
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: 1fr 30px;
+}
+
+.projectImage {
+  max-width: 165px;
+}
+
+.projectsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+
+.socialIconsContact {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
